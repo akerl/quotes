@@ -1,0 +1,8 @@
+---
+books:
+    -   name: '1984'
+        path: '1984'
+    -   name: Animal Farm
+        path: animal_farm
+...
+

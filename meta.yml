@@ -1,0 +1,30 @@
+---
+authors:
+    -   name: Aldous Huxley
+        path: aldous_huxley
+    -   name: Ayn Rand
+        path: ayn_rand
+    -   name: Christopher Marlowe
+        path: christopher_marlowe
+    -   name: Frank Herbert
+        path: frank_herbert
+    -   name: George Orwell
+        path: george_orwell
+    -   name: John Green
+        name: john_green
+    -   name: Lois Lowry
+        path: lois_lowry
+    -   name: Matthew Stover
+        path: matthew_stover
+    -   name: Orson Scott Card
+        path: orson_scott_card
+    -   name: Sean Stewart
+        path: sean_stewart
+    -   name: Stephen Chbosky
+        path: stephen_chbosky
+    -   name: Timothy Zahn
+        path: timothy_zahn
+    -   name: William Golding
+        path: william_golding
+...
+

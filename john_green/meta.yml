@@ -1,0 +1,10 @@
+---
+books:
+    -   name: An Abundance of Katherines
+        path: an_abundance_of_katherines
+    -   name: Paper Towns
+        path: paper_towns
+    -   name: Looking for Alaska
+        path: looking_for_alaska
+...
+

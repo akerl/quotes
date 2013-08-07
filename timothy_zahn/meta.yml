@@ -1,0 +1,12 @@
+---
+books:
+    -   name: Allegiance
+        path: allegiance
+    -   name: Heir to the Empire
+        path: heir_to_the_empire
+    -   name: Dark Force Rising
+        path: dark_force_rising
+    -   name: The Last Command
+        path: the_last_command
+...
+

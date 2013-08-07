@@ -1,0 +1,5 @@
+---
+books:
+    -   name: Lord of the Flies
+        path: lord_of_the_flies
+...
