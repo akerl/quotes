@@ -1,0 +1,9 @@
+---
+books:
+    -   name: The Fellowship of the Ring
+        path: fellowship_of_the_ring
+    -   name: The Two Towers
+        path: two_towers
+    -   name: The Return of the King
+        path: return_of_the_king
+...

@@ -1,0 +1,17 @@
+---
+books:
+    -   name: "The Sorcerer's Stone"
+        path:  sorcerers_stone
+    -   name: The Chamber of Secrets
+        path: chamber_of_secrets
+    -   name: The Prisoner of Azkaban
+        path: prisoner_of_azkaban
+    -   name: The Goblet of Fire
+        path: goblet_of_fire
+    -   name: The Order of the Phoenix
+        path: order_of_the_phoenix
+    -   name: The Half-Blood Prince
+        path: halfblood_prince
+    -   name: The Deathly Hallows
+        path: deathly_hallows
+...

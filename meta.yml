@@ -26,5 +26,9 @@ authors:
         path: timothy_zahn
     -   name: William Golding
         path: william_golding
+    -   name: JRR Tolkien
+        path: jrr_tolkien
+    -   name: JK Rowling
+        path: jk_rowling
 ...
 
