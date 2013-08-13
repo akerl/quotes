@@ -1,0 +1,5 @@
+---
+books:
+    -   name: Balance Point
+        path: balance_point
+...

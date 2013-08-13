@@ -30,5 +30,19 @@ authors:
         path: jrr_tolkien
     -   name: JK Rowling
         path: jk_rowling
+    -   name: Suzanne Collins
+        path: suzanne_collins
+    -   name: Michael Stackpole
+        path: michael_stackpole
+    -   name: Aaron Allston
+        path: aaron_allston
+    -   name: R.A. Salvatore
+        path: ra_salvatore
+    -   name: James Luceno
+        path: james_luceno
+    -   name: Kathy Tyers
+        path: kathy_tyers
+    -   name: Greg Keyes
+        path: greg_keyes
 ...
 

@@ -1,0 +1,7 @@
+---
+books:
+    -   name: "Agents of Chaos 1: Hero's Trial"
+        path: heros_trial
+    -   name: "Agents of Chaos 2: Jedi Eclipse"
+        path: jedi_eclipse
+...

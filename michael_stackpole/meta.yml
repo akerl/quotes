@@ -1,0 +1,17 @@
+---
+books:
+    -   name: 'X-Wing: Rogue Squadron'
+        path: rogue_squadron
+    -   name: "Wedge's Gamble"
+        path: wedges_gamble
+    -   name: The Krytos Trap
+        path: krytos_trap
+    -   name: The Bacta War
+        path: bacta_war
+    -   name: "Isard's Revenge"
+        path: isards_revenge
+    -   name: 'Dark Tide 1: Onslaught'
+        path: onslaught
+    -   name: 'Dark Tide 2: Ruin'
+        path: ruin
+...

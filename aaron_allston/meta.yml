@@ -1,0 +1,12 @@
+---
+books:
+    -   name: Wraith Squadron
+        path: wraith_squadron
+    -   name: Iron Fist
+        path: iron_fist
+    -   name: Solo Command
+        path: solo_command
+    -   name: Starfighters of Adumar
+        path: starfighters_of_adumar
+...
+

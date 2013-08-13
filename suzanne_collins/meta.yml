@@ -1,0 +1,9 @@
+---
+books:
+    -   name: The Hunger Games
+        path: hunger_games
+    -   name: Catching Fire
+        path: catching_fire
+    -   name: Mockingjay
+        path: mockingjay
+...
