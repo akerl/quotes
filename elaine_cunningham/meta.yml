@@ -1,0 +1,5 @@
+---
+books:
+    -   name: 'Dark Journey'
+        path: dark_journey
+...

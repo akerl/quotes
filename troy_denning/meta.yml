@@ -1,0 +1,5 @@
+---
+books:
+    -   name: 'Star by Star'
+        path: star_by_star
+...

@@ -8,5 +8,9 @@ books:
         path: solo_command
     -   name: Starfighters of Adumar
         path: starfighters_of_adumar
+    -   name: 'Enemy Lines 1: Rebel Dream'
+        path: rebel_dream
+    -   name: 'Enemy Lines 2: Rebel Stand'
+        path: rebel_stand
 ...
 

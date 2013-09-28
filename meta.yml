@@ -44,5 +44,9 @@ authors:
         path: kathy_tyers
     -   name: Greg Keyes
         path: greg_keyes
+    -   name: Troy Denning
+        path: troy_denning
+    -   name: Elaine Cunningham
+        path: elaine_cunningham
 ...
 

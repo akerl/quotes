@@ -4,4 +4,6 @@ books:
         path: heros_trial
     -   name: "Agents of Chaos 2: Jedi Eclipse"
         path: jedi_eclipse
+    -   name: The Unifying Force
+        path: unifying_force
 ...
