@@ -6,5 +6,7 @@ books:
         path: paper_towns
     -   name: Looking for Alaska
         path: looking_for_alaska
+    -   name: The Fault in Our Stars
+        path: fault_in_our_stars
 ...
 
