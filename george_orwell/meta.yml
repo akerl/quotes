@@ -1,8 +1,5 @@
 ---
+author: George Orwell
 books:
-    -   name: '1984'
-        path: '1984'
-    -   name: Animal Farm
-        path: animal_farm
-...
-
+  '1984': '1984'
+  animal_farm: Animal Farm

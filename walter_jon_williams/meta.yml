@@ -1,5 +1,5 @@
 ---
+author: Walter Jon Williams
 books:
-    -   name: "Destiny's Way"
-        path: destinys_way
+  destinys_way: Destiny's Way
 ...

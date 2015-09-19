@@ -1,9 +1,6 @@
 ---
+author: JRR Tolkien
 books:
-    -   name: The Fellowship of the Ring
-        path: fellowship_of_the_ring
-    -   name: The Two Towers
-        path: two_towers
-    -   name: The Return of the King
-        path: return_of_the_king
-...
+  fellowship_of_the_ring: The Fellowship of the Ring
+  two_towers: The Two Towers
+  return_of_the_king: The Return of the King

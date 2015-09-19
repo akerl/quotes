@@ -1,12 +1,7 @@
 ---
+author: Timothy Zahn
 books:
-    -   name: Allegiance
-        path: allegiance
-    -   name: Heir to the Empire
-        path: heir_to_the_empire
-    -   name: Dark Force Rising
-        path: dark_force_rising
-    -   name: The Last Command
-        path: the_last_command
-...
-
+  allegiance: Allegiance
+  heir_to_the_empire: Heir to the Empire
+  dark_force_rising: Dark Force Rising
+  the_last_command: The Last Command

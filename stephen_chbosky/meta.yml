@@ -1,6 +1,4 @@
 ---
+author: Stephen Chbosky
 books:
-    -   name: The Perks of Being a Wallflower
-        path: the_perks_of_being_a_wallflower
-...
-
+  the_perks_of_being_a_wallflower: The Perks of Being a Wallflower

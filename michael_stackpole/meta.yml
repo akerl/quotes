@@ -1,17 +1,10 @@
 ---
+author: Michael Stackpole
 books:
-    -   name: 'X-Wing: Rogue Squadron'
-        path: rogue_squadron
-    -   name: "Wedge's Gamble"
-        path: wedges_gamble
-    -   name: The Krytos Trap
-        path: krytos_trap
-    -   name: The Bacta War
-        path: bacta_war
-    -   name: "Isard's Revenge"
-        path: isards_revenge
-    -   name: 'Dark Tide 1: Onslaught'
-        path: onslaught
-    -   name: 'Dark Tide 2: Ruin'
-        path: ruin
-...
+  rogue_squadron: 'X-Wing: Rogue Squadron'
+  wedges_gamble: Wedge's Gamble
+  krytos_trap: The Krytos Trap
+  bacta_war: The Bacta War
+  isards_revenge: Isard's Revenge
+  onslaught: 'Dark Tide 1: Onslaught'
+  ruin: 'Dark Tide 2: Ruin'

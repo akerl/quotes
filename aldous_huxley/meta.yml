@@ -1,6 +1,4 @@
 ---
+author: Aldous Huxley
 books:
-    -   name: Brave New World
-        path: brave_new_world
-...
-
+  brave_new_world: Brave New World

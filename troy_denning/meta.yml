@@ -1,5 +1,4 @@
 ---
+author: Troy Denning
 books:
-    -   name: 'Star by Star'
-        path: star_by_star
-...
+  star_by_star: Star by Star

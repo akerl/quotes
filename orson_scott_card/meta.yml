@@ -1,24 +1,13 @@
 ---
+author: Orson Scott Card
 books:
-    -   name: "Ender's Game"
-        path: enders_game
-    -   name: Speaker for the Dead
-        path: speaker_for_the_dead
-    -   name: Xenocide
-        path: xenocide
-    -   name: Children of the Mind
-        path: children_of_the_mind
-    -   name: "Ender's Shadow"
-        path: enders_shadow
-    -   name: Shadow of the Hegemon
-        path: shadow_of_the_hegemon
-    -   name: Shadow Puppets
-        path: shadow_puppets
-    -   name: Shadow of the Giant
-        path: shadow_of_the_giant
-    -   name: Ender in Exile
-        path: ender_in_exile
-    -   name: First Meetings
-        path: first_meetings
-...
-
+  enders_game: Ender's Game
+  speaker_for_the_dead: Speaker for the Dead
+  xenocide: Xenocide
+  children_of_the_mind: Children of the Mind
+  enders_shadow: Ender's Shadow
+  shadow_of_the_hegemon: Shadow of the Hegemon
+  shadow_puppets: Shadow Puppets
+  shadow_of_the_giant: Shadow of the Giant
+  ender_in_exile: Ender in Exile
+  first_meetings: First Meetings

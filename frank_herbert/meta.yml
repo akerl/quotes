@@ -1,6 +1,4 @@
 ---
+author: Frank Herbert
 books:
-    -   name: Dune
-        path: dune
-...
-
+  dune: Dune

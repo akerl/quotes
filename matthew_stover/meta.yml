@@ -1,8 +1,5 @@
 ---
+author: Matthew Stover
 books:
-    -   name: Shatterpoint
-        path: shatterpoint
-    -   name: Traitor
-        path: traitor
-...
-
+  shatterpoint: Shatterpoint
+  traitor: Traitor

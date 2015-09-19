@@ -1,5 +1,4 @@
 ---
+author: R.A. Salvatore
 books:
-    -   name: Vector Prime
-        path: vector_prime
-...
+  vector_prime: Vector Prime

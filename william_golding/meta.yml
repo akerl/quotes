@@ -1,5 +1,4 @@
 ---
+author: William Golding
 books:
-    -   name: Lord of the Flies
-        path: lord_of_the_flies
-...
+  lord_of_the_flies: Lord of the Flies

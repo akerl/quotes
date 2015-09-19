@@ -1,9 +1,6 @@
 ---
+author: Greg Keyes
 books:
-    -   name: 'Edge of Victory 1: Conquest'
-        path: conquest
-    -   name: 'Edge of Victory 2: Rebirth'
-        path: rebirth
-    -   name: The Final Prophecy
-        path: final_prophecy
-...
+  conquest: 'Edge of Victory 1: Conquest'
+  rebirth: 'Edge of Victory 2: Rebirth'
+  final_prophecy: The Final Prophecy

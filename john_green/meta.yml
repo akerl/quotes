@@ -1,12 +1,7 @@
 ---
+author: John Green
 books:
-    -   name: An Abundance of Katherines
-        path: an_abundance_of_katherines
-    -   name: Paper Towns
-        path: paper_towns
-    -   name: Looking for Alaska
-        path: looking_for_alaska
-    -   name: The Fault in Our Stars
-        path: fault_in_our_stars
-...
-
+  an_abundance_of_katherines: An Abundance of Katherines
+  paper_towns: Paper Towns
+  looking_for_alaska: Looking for Alaska
+  fault_in_our_stars: The Fault in Our Stars

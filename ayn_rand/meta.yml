@@ -1,6 +1,4 @@
 ---
+author: Ayn Rand
 books:
-    -   name: Anthem
-        path: anthem
-...
-
+  anthem: Anthem

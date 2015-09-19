@@ -1,17 +1,10 @@
 ---
+author: JK Rowling
 books:
-    -   name: "The Sorcerer's Stone"
-        path:  sorcerers_stone
-    -   name: The Chamber of Secrets
-        path: chamber_of_secrets
-    -   name: The Prisoner of Azkaban
-        path: prisoner_of_azkaban
-    -   name: The Goblet of Fire
-        path: goblet_of_fire
-    -   name: The Order of the Phoenix
-        path: order_of_the_phoenix
-    -   name: The Half-Blood Prince
-        path: halfblood_prince
-    -   name: The Deathly Hallows
-        path: deathly_hallows
-...
+  sorcerers_stone: The Sorcerer's Stone
+  chamber_of_secrets: The Chamber of Secrets
+  prisoner_of_azkaban: The Prisoner of Azkaban
+  goblet_of_fire: The Goblet of Fire
+  order_of_the_phoenix: The Order of the Phoenix
+  halfblood_prince: The Half-Blood Prince
+  deathly_hallows: The Deathly Hallows

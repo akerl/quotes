@@ -1,6 +1,4 @@
 ---
+author: Sean Stewart
 books:
-    -   name: Dark Rendezvous
-        path: dark_rendezvous
-...
-
+  dark_rendezvous: Dark Rendezvous

@@ -1,6 +1,4 @@
 ---
+author: Lev Grossman
 books:
-    -   name: The Magicians
-        path: the_magicians
-...
-
+  the_magicians: The Magicians

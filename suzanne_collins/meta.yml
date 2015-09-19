@@ -1,9 +1,6 @@
 ---
+author: Suzanne Collins
 books:
-    -   name: The Hunger Games
-        path: hunger_games
-    -   name: Catching Fire
-        path: catching_fire
-    -   name: Mockingjay
-        path: mockingjay
-...
+  hunger_games: The Hunger Games
+  catching_fire: Catching Fire
+  mockingjay: Mockingjay

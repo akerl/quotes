@@ -1,9 +1,7 @@
 ---
+author: Sean Williams
 books:
-    -   name: 'Force Heretic 1: Remnant'
-        path: remnant
-    -   name: 'Force Heretic 2: Refugee'
-        path: refugee
-    -   name: 'Force Heretic 3: Reunion'
-        path: reunion
+  remnant: 'Force Heretic 1: Remnant'
+  refugee: 'Force Heretic 2: Refugee'
+  reunion: 'Force Heretic 3: Reunion'
 ...

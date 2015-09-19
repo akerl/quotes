@@ -1,10 +1,6 @@
 ---
+author: Lois Lowry
 books:
-    -   name: The Giver
-        path: the_giver
-    -   name: Gathering Blue
-        path: gathering_blue
-    -   name: The Messenger
-        path: the_messenger
-...
-
+  the_giver: The Giver
+  gathering_blue: Gathering Blue
+  the_messenger: The Messenger

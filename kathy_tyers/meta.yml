@@ -1,5 +1,4 @@
 ---
+author: Kathy Tyers
 books:
-    -   name: Balance Point
-        path: balance_point
-...
+  balance_point: Balance Point

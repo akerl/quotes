@@ -1,6 +1,4 @@
 ---
+author: Christopher Marlowe
 books:
-    -   name: Doctor Faustus
-        path: doctor_faustus
-...
-
+  doctor_faustus: Doctor Faustus

@@ -1,16 +1,9 @@
 ---
+author: Aaron Allston
 books:
-    -   name: Wraith Squadron
-        path: wraith_squadron
-    -   name: Iron Fist
-        path: iron_fist
-    -   name: Solo Command
-        path: solo_command
-    -   name: Starfighters of Adumar
-        path: starfighters_of_adumar
-    -   name: 'Enemy Lines 1: Rebel Dream'
-        path: rebel_dream
-    -   name: 'Enemy Lines 2: Rebel Stand'
-        path: rebel_stand
-...
-
+  wraith_squadron: Wraith Squadron
+  iron_fist: Iron Fist
+  solo_command: Solo Command
+  starfighters_of_adumar: Starfighters of Adumar
+  rebel_dream: 'Enemy Lines 1: Rebel Dream'
+  rebel_stand: 'Enemy Lines 2: Rebel Stand'

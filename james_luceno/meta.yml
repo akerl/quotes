@@ -1,9 +1,6 @@
 ---
+author: James Luceno
 books:
-    -   name: "Agents of Chaos 1: Hero's Trial"
-        path: heros_trial
-    -   name: "Agents of Chaos 2: Jedi Eclipse"
-        path: jedi_eclipse
-    -   name: The Unifying Force
-        path: unifying_force
-...
+  heros_trial: 'Agents of Chaos 1: Hero''s Trial'
+  jedi_eclipse: 'Agents of Chaos 2: Jedi Eclipse'
+  unifying_force: The Unifying Force
