@@ -1,0 +1,15 @@
+dist: trusty
+env:
+  global:
+  - BUCKET=akerl-quotes-library
+  - AWS_DEFAULT_REGION=us-east-1
+install: go get github.com/akerl/madlibrarian
+script: ./scripts/build.rb
+deploy:
+  provider: script
+  script: "./scripts/upload.rb || travis_terminate 1"
+  skip_cleanup: true
+  on:
+    branch: master
+notifications:
+  email: false
