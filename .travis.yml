@@ -4,7 +4,7 @@ env:
   - BUCKET=akerl-quotes-library
   - AWS_DEFAULT_REGION=us-east-1
 install: go get github.com/akerl/madlibrarian
-script: ./scripts/build.rb
+script: "./scripts/build.rb"
 deploy:
   provider: script
   script: "./scripts/upload.rb || travis_terminate 1"
@@ -13,3 +13,6 @@ deploy:
     branch: master
 notifications:
   email: false
+  slack:
+    rooms:
+      secure: mkn0C1t3H5wRi1m7ZXTXH56cgtmErG3brmgX3NA9bbA1pwbX/cr/WxkXk7i008OR8vj0H7DWP8xaf76Fl4NyP2a5/OdAi1QyDDck+4wrfx9kXGkKChRTr1bvHMITvurKeD5uzvOL4KIqDS6LTUr2fMJEz+TlKuKP4YNybKym/3A9SzbZmj1TG8/g9sWk0IbeA+Oo4Im2AbgBXL2BJcOpn3lpQKvFLiVHGBUK7uAKDR7suUPyoDA5S9cSKXlpbmdb6Ybcypse5QQokSiOawxLNjZBa6H5qslhlSNvv8M6jNuMh1QwU1NK+GBrIhw7xMN+zqqTWWVyp4Gpq254H4farES4xa2Oc986NmQN+dlaZezCwXMGkSzRZl3WrWqD8W5lVYPA/kURMbmZSqwkMS7vQLynQ7rET2KYCBH9x5YUcnh0wlz6eJ/DacO1QaCEISrZSl7J1u9UWBNZUlFapjnZrFDAd+Qiha5uYvrZJ8f1WEh35WZgoSHG6zX7Cl3bwfZ78dH4UQVvJ0PIJtWuqzpHUJ5yJ0ArMxE1HnfYTOWVF3ulTCU6cokCOpFkA+iQQkwIQRAgl5qC4Cw9oLXTzXff/1hrwSd5kjW5kGcUu8dfkb6ikiCnNo/s2QNjhdFyaCF8Kda4wpBTJCOVZnhWJoEbMJ58ZqdgI9xMY7xwDYIwbd4=
