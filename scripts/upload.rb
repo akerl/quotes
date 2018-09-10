@@ -3,7 +3,7 @@
 bucket = ENV['BUCKET'] || raise('No BUCKET set')
 
 cmd = "madlibrarian upload _build/data.yml '#{bucket}' books"
-remote = "_build/meta.yml'"
+remote = "_build/meta.yml"
 meta = "'s3://#{bucket}/meta/books.yml'"
 
 system("#{cmd} > #{remote}") || raise('Content failed')
