@@ -18,7 +18,7 @@ jobs:
     - name: Build
       run: ./scripts/build.rb
     - name: Release
-      if: github.ref == 'refs/tags/master'
+      if: github.ref == 'refs/heads/master'
       run: ./scripts/upload.rb
       env:
         BUCKET: akerl-book-library
