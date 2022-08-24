@@ -2,7 +2,7 @@
 
 bucket = ENV['BUCKET'] || raise('No BUCKET set')
 
-cmd = "gopath/bin/madlibrarian upload _build/data.yml '#{bucket}' books"
+cmd = "madlibrarian upload _build/data.yml '#{bucket}' books"
 remote = "_build/meta.yml"
 meta = "'s3://#{bucket}/meta/books.yml'"
 
