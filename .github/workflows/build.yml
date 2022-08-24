@@ -1,0 +1,47 @@
+name: Build
+on:
+  pull_request:
+  push:
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        submodules: recursive
+    - name: Install madlibrarian
+      run: go install github.com/akerl/madlibrarian@latest
+    - name: Install awscli
+      run: pip install awscli
+    - name: Build
+      run: ./scripts/build.rb
+    - name: Release
+      if: github.ref == 'refs/tags/master'
+      run: ./scripts/upload.rb
+      env:
+        BUCKET: akerl-book-library
+        AWS_DEFAULT_REGION: us-east-1
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    - name: Post to a Slack channel
+      if: ${{ failure() }}
+      uses: slackapi/slack-github-action@v1.18.0
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+      with:
+        payload: |
+          {
+            "text": "*${{ github.repository }}*\nBuild failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+            "blocks": [
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "*${{ github.repository }}*\nBuild failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                }
+              }
+            ]
+          }
