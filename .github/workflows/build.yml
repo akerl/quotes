@@ -20,7 +20,7 @@ jobs:
     - name: Install config deps
       run: ./scripts/deps.sh
     - name: Build
-      run: ./scripts/build.rb
+      run: ./meta/build.rb
     - name: Build config
       run: ./scripts/template.py config.yaml.j2 config.yaml
       env:
@@ -31,7 +31,7 @@ jobs:
         HSLACK_TOKEN: ${{ secrets.HSLACK_TOKEN }}
     - name: Release
       if: github.ref == 'refs/heads/master'
-      run: ./scripts/upload.rb
+      run: ./meta/upload.rb
       env:
         BUCKET: akerl-book-library
         AWS_DEFAULT_REGION: us-east-1
