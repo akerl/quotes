@@ -1,9 +1,9 @@
-signkey: {{ env['signkey'] }}
-enckey: {{ env['enckey'] }}
+signkey: {{ env['SIGN_KEY'] }}
+enckey: {{ env['ENC_KEY'] }}
 slacktokens:
-- {{ env['dslack'] }}
-- {{ env['aslack'] }}
-- {{ env['hslack'] }}
+- {{ env['DSLACK_TOKEN'] }}
+- {{ env['ASLACK_TOKEN'] }}
+- {{ env['HSLACK_TOKEN'] }}
 authurl: https://auth.coolquotes.xyz/auth
 acls:
   default:
