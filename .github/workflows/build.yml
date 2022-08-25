@@ -17,13 +17,29 @@ jobs:
         go-version: '>=1.19.0'
     - name: Install madlibrarian
       run: go install github.com/akerl/madlibrarian@latest
-    - name: Install awscli
-      run: pip install awscli
+    - name: Install config deps
+      run: ./scripts/deps.sh
     - name: Build
       run: ./scripts/build.rb
+    - name: Build config
+      run: ./scripts/template.py config.yaml.j2 config.yaml
+      env:
+        SIGN_KEY: ${{ secrets.SIGN_KEY }}
+        ENC_KEY: ${{ secrets.ENC_KEY }}
+        DSLACK_TOKEN: ${{ secrets.DSLACK_TOKEN }}
+        ASLACK_TOKEN: ${{ secrets.ASLACK_TOKEN }}
+        HSLACK_TOKEN: ${{ secrets.HSLACK_TOKEN }}
     - name: Release
       if: github.ref == 'refs/heads/master'
       run: ./scripts/upload.rb
+      env:
+        BUCKET: akerl-book-library
+        AWS_DEFAULT_REGION: us-east-1
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    - name: Release config
+      if: github.ref == 'refs/heads/master'
+      run: ./scripts/upload.sh config.yaml
       env:
         BUCKET: akerl-book-library
         AWS_DEFAULT_REGION: us-east-1
