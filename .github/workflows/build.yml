@@ -30,7 +30,7 @@ jobs:
         ASLACK_TOKEN: ${{ secrets.ASLACK_TOKEN }}
         HSLACK_TOKEN: ${{ secrets.HSLACK_TOKEN }}
     - name: Release
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/main'
       run: ./meta/upload.rb
       env:
         BUCKET: akerl-book-library
@@ -38,7 +38,7 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     - name: Release config
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/main'
       run: ./scripts/upload.sh config.yaml
       env:
         BUCKET: akerl-book-library
