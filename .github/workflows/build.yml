@@ -1,7 +1,12 @@
+---
 name: Build
-on:
-  pull_request:
+'on':
   push:
+    branches:
+    - main
+    tags:
+    - "**"
+  pull_request_target:
 jobs:
   build:
     name: Build
@@ -14,40 +19,40 @@ jobs:
     - name: Set up go
       uses: actions/setup-go@v3
       with:
-        go-version: '>=1.19.0'
+        go-version: ">=1.19.0"
     - name: Install madlibrarian
       run: go install github.com/akerl/madlibrarian@latest
     - name: Install config deps
-      run: ./scripts/deps.sh
+      run: "./scripts/deps.sh"
     - name: Build
-      run: ./meta/build.rb
+      run: "./meta/build.rb"
     - name: Build config
-      run: ./scripts/template.py config.yaml.j2 config.yaml
+      run: "./scripts/template.py config.yaml.j2 config.yaml"
       env:
-        SIGN_KEY: ${{ secrets.SIGN_KEY }}
-        ENC_KEY: ${{ secrets.ENC_KEY }}
-        DSLACK_TOKEN: ${{ secrets.DSLACK_TOKEN }}
-        ASLACK_TOKEN: ${{ secrets.ASLACK_TOKEN }}
-        HSLACK_TOKEN: ${{ secrets.HSLACK_TOKEN }}
+        SIGN_KEY: "${{ secrets.SIGN_KEY }}"
+        ENC_KEY: "${{ secrets.ENC_KEY }}"
+        DSLACK_TOKEN: "${{ secrets.DSLACK_TOKEN }}"
+        ASLACK_TOKEN: "${{ secrets.ASLACK_TOKEN }}"
+        HSLACK_TOKEN: "${{ secrets.HSLACK_TOKEN }}"
     - name: Release
       if: github.ref == 'refs/heads/main'
-      run: ./meta/upload.rb
+      run: "./meta/upload.rb"
       env:
         BUCKET: akerl-book-library
         AWS_DEFAULT_REGION: us-east-1
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID }}"
+        AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY }}"
     - name: Release config
       if: github.ref == 'refs/heads/main'
-      run: ./scripts/upload.sh config.yaml
+      run: "./scripts/upload.sh config.yaml"
       env:
         BUCKET: akerl-book-library
         AWS_DEFAULT_REGION: us-east-1
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID }}"
+        AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY }}"
     - name: Post to hook-exporter
-      run: ./.github/exporter.sh
+      run: "./.github/exporter.sh"
       env:
-        EXPORTER_TOKEN: ${{ secrets.EXPORTER_TOKEN }}
-        JOB_STATUS: ${{ job.status }}
-      if: ${{ always() }}
+        EXPORTER_TOKEN: "${{ secrets.EXPORTER_TOKEN }}"
+        JOB_STATUS: "${{ job.status }}"
+      if: "${{ always() }}"
